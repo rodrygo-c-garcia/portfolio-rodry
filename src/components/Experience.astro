@@ -1,0 +1,35 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
+  {
+    date: "Agosto 2024 - Actualmente",
+    title: "Pasante de Desarrollo de Backend",
+    company: "10Minds",
+    responsibilities: [
+      "Desarrollo de un sistema SaaS utilizando Java y Spring Framework.",
+      "Implementación de microservicios para ofrecer soluciones escalables y eficientes.",
+      "Investigación y aplicación de arquitecturas avanzadas en el proyecto.",
+      "Desarrollo de habilidades en gestión de proyectos en un entorno colaborativo.",
+    ],
+  },
+  {
+    date: "Septiembre 2022",
+    title: "Freelance, Frontend & Backend Developer",
+    responsibilities: [
+      "Desarrollé proyectos Full Stack utilizando HTML, CSS, JavaScript, TypeScript, VueJS, ReactJS, Flutter, Python, AWS, Java SE, MySQL, Spring Framework, Laravel, Git y GitHub.",
+      "Adquirí experiencia en aplicaciones web y móviles, trabajando con APIs, arquitecturas escalables y soluciones en la nube.",
+      "Gestioné todas las fases del desarrollo, desde el diseño hasta la implementación y despliegue, colaborando con clientes y trabajando de manera autónoma.",
+    ],
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
