@@ -3,6 +3,7 @@ const personalImageAlt = "Ariel Rodrigo";
 import Badge from "@/components/Badge.astro";
 import LinkedInIcon from "@/components/icons/LinkedIn.astro";
 import GithubIcon from "@/components/icons/GitHub.astro";
+import CVIcon from "@/components/icons/cv.astro";
 import MailIcon from "@/components/icons/Mail.astro";
 import LocationIcon from "@/components/icons/Location.astro";
 import SocialPill from "@/components/SocialPill.astro";
@@ -65,8 +66,14 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
     <LinkedInIcon class="size-4" />
     LinkedIn
   </SocialPill>
-  <SocialPill href="https://linkedin.com/in/ariel-c-garcia">
+  <SocialPill href="https://github.com/rodrygo-c-garcia">
     <GithubIcon class="size-4" />
     Github
+  </SocialPill>
+  <SocialPill
+    href="https://drive.google.com/file/d/1KXx6G1rbv66VrL37oKrBUT6dIxrzv2lR/view?usp=drive_link"
+  >
+    <CVIcon class="size-4" />
+    CV
   </SocialPill>
 </nav>
